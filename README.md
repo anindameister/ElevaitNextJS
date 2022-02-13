@@ -92,7 +92,7 @@ export default HomePage
 ## `DocumentPage.js`<- This was the initial name and later it was changed to a dynamic file named `[doc_ID].js`
 - The reason is the below photo
 - According to the photo, it demands the next page to be dynamic
-![ELEVAIT mockup view]("NextJS\my-app\photos\1.PNG")
+![ELEVAIT mockup view](photos/1.PNG)
 - The below is the code for `DocumentPage.js`
 ```
 function DocumentPage(){
