@@ -9,7 +9,7 @@
 - this youtube video didn't help much
 
 ## creating the below display
-![ELEVAIT page 1]("photos/1.PNG")
+![ELEVAIT page 1]("https://github.com/anindameister/ElevaitNextJS/blob/main/photos/1.PNG")
 - the above display is made possible with the following contents
 ```
 import styles from '../styles/Home.module.css'
