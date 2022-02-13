@@ -79,35 +79,54 @@ export default HomePage
 - client side rendering meaning that the browser renders the application on the screen.
 - rendering means to display the application on the screen.
 - <a href="https://katiehyenychoi.medium.com/virtual-dom-vs-real-dom-44d442eb2501" target="_blank">difference between vdom & dom</a> 
+- A view of the virtual DOM consists of a tree of nodes.
+- The tree of nodes is a representation of the application that is used by the browser to render the application on the screen.
+- The nodes of this tree are as follows:
+1. The root node is the document node. The document node contains the head node and the body node.
+2. The head node contains the title node.
+3. The body node contains the div node.
+4. The div node contains the h1 node.
+5. The h1 node contains the text node.
+6. The text node contains the text "Number of documents:".
+- Coming back, <a href="https://stackoverflow.com/questions/54665999/why-return-multiple-elements-in-react-is-not-allowed">When you return multiple elements from React elements from the render method, the assumtion that the tree will have one root node for the Component will not longer hold, hence making it difficult to process reconcilation algorithm.</a>
+## `DocumentPage.js`<- This was the initial name and later it was changed to a dynamic file named `[doc_ID].js`
+- The reason is the below photo
+- According to the photo, it demands the next page to be dynamic
+![ELEVAIT mockup view]("NextJS\my-app\photos\1.PNG")
+- The below is the code for `DocumentPage.js`
+```
+function DocumentPage(){
+
+    return <h1>Document 1</h1>
+}
+export default DocumentPage
+```
+- In the above, it is just a static look
+- if we would have done `http://localhost:3000/DocumentPage`, then we would have seen the obvious content
+- Now, we will attempt to make this page dynamic
+- we renamed from `DocumentPage.js` to `[doc_ID].js`
+- This tells nextJS that it is a dynamic page
+- to check the dynamicity we did, `http://localhost:3000/aninda` and we got the same view as `http://localhost:3000/DocumentPage`
+- we tried again with `http://localhost:3000/arunava` and the same result
+- Now, if we want to see what has been passed by the user within the browser, we open the `developer option`
+- In order to proceed, let's change the code a bit by introducing the changes as below
+- `import{useRouter} from 'next/router'`
+- `const router=useRouter()`
+- `console.log(router.query.doc_ID)`
 
 ```
-/**
+import{useRouter} from 'next/router'
+function DocumentPage(){
+
+    const router=useRouter()
+    console.log(router.query.doc_ID) 
+    return <h1>Document 1</h1>
+}
+export default DocumentPage
+- <a href="https://www.youtube.com/watch?v=BYbgopx44vo&feature=emb_imp_woyt
+">let's recollect the usage of vdom with the robot and human named view story</a>
 
 
- * The virtual DOM is a representation of the application that is used by the browser to render the application on the screen.
- * A view of the virtual DOM consists of a tree of nodes.
- * The tree of nodes is a representation of the application that is used by the browser to render the application on the screen.
- * The nodes of this tree are as follows:
- * 1. The root node is the document node. 
- * 2. The document node contains the head node and the body node.
- * 3. The head node contains the title node.
- * 4. The body node contains the div node.
- * 5. The div node contains the h1 node.
- * 6. The h1 node contains the text node.
- * 7. The text node contains the text "Number of documents:".
- * 8. The div node contains the button node.
- * 9. The button node contains the text node.
- * 10. The text node contains the text "+".
- * 11. The body node contains the div node.
- * 12. The div node contains the button node.
- * 13. The button node contains the text node.
- * 14. The text node contains the text "Add".
- * 15. The div node contains the button node.
- * 16. The button node contains the text node.
- * 
- * @returns 
- */
- ```
 
 
 
