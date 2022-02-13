@@ -78,7 +78,7 @@ export default HomePage
 - The reason it is important to wrap the component in a single element is because client side rendering is done using the virtual DOM.
 - client side rendering meaning that the browser renders the application on the screen.
 - rendering means to display the application on the screen.
-- <a href="https://katiehyenychoi.medium.com/virtual-dom-vs-real-dom-44d442eb2501">difference between vdom & dom</a> 
+- <a href="https://katiehyenychoi.medium.com/virtual-dom-vs-real-dom-44d442eb2501" target="_blank">difference between vdom & dom</a> 
 
 ```
 /**
