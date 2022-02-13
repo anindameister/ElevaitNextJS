@@ -1,0 +1,158 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.centering{
+  text-align: center;
+   margin-left:auto; /*margin left auto means the div will be centered on the left side of the page*/
+   margin-right:auto; /*margin right auto means the div will be centered on the right side of the page*/
+   font-size: 17px;
+}
+.foo{
+  position:fixed;
+  left:40%;width:250px;border: 3px solid black;background-color: #f1f1f1;
+
+}
+.arrowRight {
+  border-top: 16px solid transparent; /* border meaning is to draw a line, so we draw a line */
+  border-bottom: 16px solid transparent;/*we draw a line here as well and this line has the same length as the line we draw above, which is 16px or 16*0.026=0.416cm*/
+  
+  border-left: 16px solid black; /* we draw a line here and this line has the same length as the line we draw above, which is 16px or 16*0.026=0.416cm. This line is for the left side */
+    margin-left: 215px; /* margin left 217px means the div will be centered on the left side of the page. The page here refers to the div within which this is embedded. So 217px is the distance from the starting point */
+}
+.bottomRight{
+  position:relative; /*relative means the div will be positioned relative to the page*/
+}
+.circular{
+  position:fixed; /*relative means the div will be positioned relative to the page(page is the div in here)*/
+        bottom:0%;
+        right:30%;
+        top:50%;
+    
+        width: 50px; /*width 100px means the div will be 100px wide*/
+        height: 50px; /*height 100px means the div will be 100px high*/
+        border-radius: 50%; /*border-radius 50% means the div will have a circular shape with a radius of 50% of the width of the div*/
+        background-color: #fff; /*background-color #fff means the div will have a white background*/
+        border: 3px solid #000; /*border 3px solid #000 means the div will have a black border with a width of 3px*/
+        box-shadow: 0 0 0 0 rgba(0,0,0,0.2),0 0 0 0 rgba(0,0,0,0.19); /*box-shadow 0 0 0 0 rgba(0,0,0,0.2),0 0 0 0 rgba(0,0,0,0.19) means the div will have a shadow with a width of 0px, a height of 0px, a blur of 0px, a spread of 0px, a color of rgba(0,0,0,0.2), and a color of rgba(0,0,0,0.19)*/
+        text-align: center; /*text-align center means the text will be centered*/
+        line-height: 50px; /*line-height 100px means the text will be 100px high*/
+        font-size: 50px; /*font-size 50px means the text will be 50px high*/
+        color: #000; /*color #000 means the text will be black*/
+        font-weight: bold; /*font-weight bold means the text will be bold*/
+        font-family: 'Arial'; /*font-family 'Arial' means the text will be in Arial font*/
+        
+    
+}
