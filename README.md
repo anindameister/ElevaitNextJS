@@ -127,6 +127,40 @@ export default DocumentPage
 - <a href="https://www.youtube.com/watch?v=BYbgopx44vo&feature=emb_imp_woyt
 ">let's recollect the usage of vdom with the robot and human named view story</a>
 
+- Today 14Feb2022,`yarn dev` was not working and finally saved by reading closely, <a href="https://stackoverflow.com/questions/68295559/cannot-use-different-slug-names-for-the-same-dynamic-path-but-different-slug">this</a> document
+
+```
+   /   = Root directory
+   .   = This location
+   ..  = Up a directory
+   ./  = Current directory
+   ../ = Parent of current directory
+   ../../ = Two directories backwards
+```
+- The above <a href="https://www.codegrepper.com/code-examples/html/how+to+write+file+paths+in+javascript">info</a>
+
+`import styles from '../styles/Home.module.css'`
+- so, `../` signifies, parent of the current directory
+- once there, we get into the `styles` folder
+
+`import styles from '../../styles/Home.module.css'`
+- In the above, we go up a directory with `..` and thus we move from document to pages
+- we stay with `/`
+- we go up again to the parent of `pages` which is `my-app` and then find `styles`
+- in a short way, we previously went one directory backward with `../` and now two directories backward with `../../`
+
+## <a href="https://docs.emmet.io/abbreviations/lorem-ipsum/">lorem ipsum generator</a>
+
+## <a href="https://nextjs.org/docs/api-reference/next/link">next js link</a>
+
+- step 1: `import`
+- step 2: `<Link href="/about><a>About US</a></Link>`
+
+![link basics]("NextJS\my-app\photos\3.PNG")
+
+- the below is a snap from 2020 documentation
+![dynamic routes basics]("NextJS\my-app\photos\4.PNG")
+
 
 
 

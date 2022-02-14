@@ -156,3 +156,24 @@
         
     
 }
+/**
+sizing the text area
+**/
+.sizing{
+  width: 15%;
+  height: 180px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid black;
+  padding: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+}
+.gap{
+  margin: 5px;
+}
