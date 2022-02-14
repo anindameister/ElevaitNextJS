@@ -9,7 +9,7 @@
 - this youtube video didn't help much
 
 ## creating the below display
-![ELEVAIT page 1](https://github.com/anindameister/ElevaitNextJS/blob/main/photos/1.PNG)
+![ELEVAIT page 1](photos/1.PNG)
 - the above display is made possible with the following contents
 ```
 import styles from '../styles/Home.module.css'
@@ -92,7 +92,7 @@ export default HomePage
 ## `DocumentPage.js`<- This was the initial name and later it was changed to a dynamic file named `[doc_ID].js`
 - The reason is the below photo
 - According to the photo, it demands the next page to be dynamic
-![ELEVAIT mockup view]("NextJS\my-app\photos\1.PNG")
+![ELEVAIT mockup view](photos/2.PNG)
 - The below is the code for `DocumentPage.js`
 ```
 function DocumentPage(){
