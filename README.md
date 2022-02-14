@@ -156,10 +156,11 @@ export default DocumentPage
 - step 1: `import`
 - step 2: `<Link href="/about><a>About US</a></Link>`
 
-![link basics]("photos/3.PNG")
+![link basics](photos/3.PNG)
+
 
 - the below is a snap from 2020 documentation
-![dynamic routes basics]("photos/4.PNG")
+![dynamic routes basics](photos/4.PNG)
 
 
 
