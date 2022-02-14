@@ -177,3 +177,55 @@ sizing the text area
 .gap{
   margin: 5px;
 }
+.sizingTable{
+  width: 30%;
+  height: 180px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid black;
+  padding: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.positioningButton{
+  margin-left: 110px;
+
+  margin-top: 30px;
+
+}
+.positioningCross{
+  margin-left: 140px;
+
+  margin-top: 3px;
+  border-radius: 50%; 
+  /*the above makes it circular*/
+
+}
+.positioningInputBox{
+  width: 87%;
+
+}
+.positioningCrossEmptyForm{
+  margin-left: 160px;
+
+  margin-top: 3px;
+  border-radius: 50%; 
+
+}
+.textarea{
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
